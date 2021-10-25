@@ -37,8 +37,8 @@ async function connect (){
 //  localStorage.setItem('provider', ' new ethers.providers.Web3Provider(window.ethereum)')
 //  let g= localStorage.getItem('provider')
 //  var obj = JSON.parse(g)
- setprint13(_provider);
- console.log(_provider);
+//  setprint13(_provider);
+//  console.log(_provider);
  let _staking = new ethers.Contract(
   '0x26d5592E71D09B02C91c7Bb4C4952Bf9788Df702', //contract address
   Abi.abi, //abi code of our contract
@@ -166,7 +166,7 @@ async function   _checkbal(){
       
       <button className='btn btn-success' onClick={_withdraw}> WITHDRAW </button>
       <br />
-      <div>{check1}</div>
+//       <div>{check1}</div>
       </div>
       <select onChange={(e)=>settitle(e.target.value)} name="" id="">
         <option value="usdt">usdt</option>

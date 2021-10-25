@@ -21,11 +21,11 @@ const [_loadings,loadings]=useState(false)
 const [bal,checkbal]=useState()
 // const [balforapprove,checkbalforapprove]=useState()
 
-const [c,_show]=useState('waiting......')
+
 const [tittle,settitle]=useState('usdt')
-const [print,setprint]=useState()
-const [check1,setprint1]=useState()
-const [ _provider,setprint13]=useState()
+// const [print,setprint]=useState()
+// const [check1,setprint1]=useState()
+// const [ _provider,setprint13]=useState()
 
  
 async function connect (){
@@ -114,7 +114,7 @@ async function   _supply(){
 
 async function   _withdraw(){ 
 //  let tx= await token.update(tittle)
- let tx= await staking.withdraw(tittle)
+  await staking.withdraw(tittle)
 
  
 }
@@ -132,7 +132,7 @@ async function   _checkbal(){
   }
   async function   gettoken(){ 
     //  let tx= await token.update(tittle)
-     let tx= await staking.gettoken(tittle)
+      await staking.gettoken(tittle)
     //  checkbal(tx)
     
      
@@ -159,9 +159,9 @@ async function   _checkbal(){
      {!_approve && <button className='btn btn-success h' onClick={ _stake}  > STAKE </button>}
      
       {!_approving && <div>  <button className='btn btn-success' onClick={_approves}> APPROVE </button> </div> }
-      {_loading && <div> {c} </div> }
+      {_loading && <div> {waiting......} </div> }
       {!_approved && <div>  <button className='btn btn-success' onClick={_supply}> SUPPLYTOKEN </button> </div> }
-       {_loadings && <div> {c} </div> } 
+       {_loadings && <div> {waiting......} </div> } 
       <br />
       
       <button className='btn btn-success' onClick={_withdraw}> WITHDRAW </button>

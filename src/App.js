@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState,useEffect}  from 'react'; 
+import React, {useState}  from 'react'; 
 
 import Abi from './abistaking.json';
 import tokenAbi from './abitoken.json';
@@ -19,7 +19,7 @@ const [_approved,approved]=useState(true)
 const [_loading,loading]=useState(false)
 const [_loadings,loadings]=useState(false)
 const [bal,checkbal]=useState()
-const [balforapprove,checkbalforapprove]=useState()
+// const [balforapprove,checkbalforapprove]=useState()
 
 const [c,_show]=useState('waiting......')
 const [tittle,settitle]=useState('usdt')

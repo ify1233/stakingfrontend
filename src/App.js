@@ -159,9 +159,9 @@ async function   _checkbal(){
      {!_approve && <button className='btn btn-success h' onClick={ _stake}  > STAKE </button>}
      
       {!_approving && <div>  <button className='btn btn-success' onClick={_approves}> APPROVE </button> </div> }
-      {_loading && <div> {waiting......} </div> }
+      {_loading && <div> {'waiting......'} </div> }
       {!_approved && <div>  <button className='btn btn-success' onClick={_supply}> SUPPLYTOKEN </button> </div> }
-       {_loadings && <div> {waiting......} </div> } 
+       {_loadings && <div> {'waiting......'} </div> } 
       <br />
       
       <button className='btn btn-success' onClick={_withdraw}> WITHDRAW </button>
